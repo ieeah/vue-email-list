@@ -11,7 +11,13 @@
 <body>
 
     <div id="app">
-        <div class="display"></div>
+        <div class="display">
+            <div v-if="emailsAreTen" class="container">
+                <ul class="list">
+                    <li v-for="(address, i) in emails">{{ emails[i] }}</li>
+                </ul>
+            </div>
+        </div>
         <button @click="get10Mails">Generate 10 Emails</button>
     </div>
     

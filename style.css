@@ -29,3 +29,17 @@ button {
 button:hover {
     filter:brightness(120%);
 }
+
+.container {
+    height: 100%;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+
+.list li {
+    display: block;
+}
